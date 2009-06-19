@@ -1,0 +1,41 @@
+== Pebbledash
+
+=== What is it?
+
+It's git. All the hard work was done in Grit (http://github.com/mojombo/grit or a
+fork thereof) but I wanted something űber simple, that at least supports basic workflow
+
+So the idea is:
+
+# All the following return true / false for success / failure
+PebbleDash.init("/path/to/git/repo")
+
+git = PebbleDash.new("/path/to/git/repo/dir/or/.git")
+
+
+git.add("/path/to/add") # or "path/one", "path/two"
+git.commit("My Commit Message")
+git.push("origin master")
+
+git.pull("origin master")
+
+
+# Other neat bits
+
+git.log("HEAD..HEAD^^^").each_file do |sha, msg, file|
+  puts "in #{sha}, #{file.name} was #{file.change_type}ed because  "
+end
+# (or something like thst)
+
+Oh, and any of the above commands with an exclaimation mark (e.g. pull!)  will
+throw exceptions instead of just true/false.
+
+
+=== Hasn't this all been done before?
+
+Probably. I'm most likely being dense. Please let me know if that's the case...
+
+
+=== License
+
+MIT
