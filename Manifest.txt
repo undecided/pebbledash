@@ -7,5 +7,9 @@ lib/pebbledash.rb
 script/console
 script/destroy
 script/generate
+spec/pebbledash_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake
 test/test_helper.rb
 test/test_pebbledash.rb
