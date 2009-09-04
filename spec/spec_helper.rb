@@ -1,10 +1,7 @@
-begin
-  require 'spec'
-rescue LoadError
-  require 'rubygems' unless ENV['NO_RUBYGEMS']
-  gem 'rspec'
-  require 'spec'
-end
+require 'rubygems' unless ENV['NO_RUBYGEMS']
+gem 'rspec'
+require 'spec'
+
 
 $:.unshift(File.dirname(__FILE__) + '/../lib')
 require 'pebbledash'
