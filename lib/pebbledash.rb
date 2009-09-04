@@ -27,7 +27,7 @@ class Pebbledash
 
   class Git
     def method_missing(method, *args)
-      `git #{args.join(' ')}`
+      `git #{method} #{args.join(' ')}`
     end
   end
 end
