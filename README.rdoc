@@ -15,7 +15,7 @@ fork thereof) but I wanted something űber simple, that at least supports basic 
 
 * exists as a concept in my mind: Sorry, my use case for this evapourated and now even grit is deprecated :(
 
-* Not many features ~yet. We're working on it though...~
+* Not many (any?) features
 
 == SYNOPSIS:
 
